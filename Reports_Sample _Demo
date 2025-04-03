@@ -1,0 +1,61 @@
+{
+  "reports": [
+    {
+      "reportId": "sales_report_2023",
+      "reportName": "2023 Annual Sales Report",
+      "description": "Comprehensive sales data for the year 2023.",
+      "endpoint": "/api/reports/sales/2023",
+      "fields": [
+        { "fieldName": "product", "dataType": "string" },
+        { "fieldName": "salesAmount", "dataType": "number" },
+        { "fieldName": "date", "dataType": "date" },
+        { "fieldName": "region", "dataType": "string"}
+      ],
+      "sampleData": [
+        { "product": "Laptop", "salesAmount": 1200.50, "date": "2023-01-15", "region": "North" },
+        { "product": "Smartphone", "salesAmount": 800.00, "date": "2023-02-20", "region": "South" },
+        { "product": "Tablet", "salesAmount": 550.75, "date": "2023-03-10", "region": "East" },
+        { "product": "Laptop", "salesAmount": 1350.25, "date": "2023-04-05", "region": "West" },
+        { "product": "Smartphone", "salesAmount": 900.00, "date": "2023-05-18", "region": "North" }
+      ]
+    },
+    {
+      "reportId": "customer_report_q1",
+      "reportName": "Q1 Customer Activity Report",
+      "description": "Customer activity metrics for the first quarter.",
+      "endpoint": "/api/reports/customers/q1",
+      "fields": [
+        { "fieldName": "customerId", "dataType": "integer" },
+        { "fieldName": "orderCount", "dataType": "integer" },
+        { "fieldName": "lastOrderDate", "dataType": "date" },
+        { "fieldName": "customerLocation", "dataType": "string"}
+      ],
+      "sampleData": [
+        { "customerId": 101, "orderCount": 5, "lastOrderDate": "2023-03-28", "customerLocation": "New York" },
+        { "customerId": 102, "orderCount": 2, "lastOrderDate": "2023-02-15", "customerLocation": "Los Angeles" },
+        { "customerId": 103, "orderCount": 8, "lastOrderDate": "2023-03-05", "customerLocation": "Chicago" },
+        { "customerId": 104, "orderCount": 1, "lastOrderDate": "2023-01-20", "customerLocation": "Houston" },
+        { "customerId": 105, "orderCount": 3, "lastOrderDate": "2023-02-25", "customerLocation": "Phoenix" }
+      ]
+    },
+        {
+      "reportId": "inventory_report_stock",
+      "reportName": "Current Inventory Stock Report",
+      "description": "Report on the current inventory levels.",
+      "endpoint": "/api/reports/inventory/stock",
+      "fields": [
+        { "fieldName": "itemId", "dataType": "integer" },
+        { "fieldName": "itemName", "dataType": "string" },
+        { "fieldName": "quantity", "dataType": "integer" },
+        { "fieldName": "warehouseLocation", "dataType": "string"}
+      ],
+      "sampleData": [
+        { "itemId": 201, "itemName": "Screws", "quantity": 1000, "warehouseLocation": "Warehouse A" },
+        { "itemId": 202, "itemName": "Nails", "quantity": 500, "warehouseLocation": "Warehouse B" },
+        { "itemId": 203, "itemName": "Bolts", "quantity": 750, "warehouseLocation": "Warehouse A" },
+        { "itemId": 204, "itemName": "Washers", "quantity": 1200, "warehouseLocation": "Warehouse C" },
+        { "itemId": 205, "itemName": "Nuts", "quantity": 900, "warehouseLocation": "Warehouse B" }
+      ]
+    }
+  ]
+}
